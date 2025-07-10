@@ -1,0 +1,178 @@
+### Lead Management API - README  
+**Version:** 1.0  
+**Last Updated:** July 1, 2025  
+
+---
+
+#### **Overview**  
+This Express.js router handles **lead management** for a client-partner platform. Key features:  
+- Clients create leads for verified partners.  
+- Partners manage leads (update status, priority).  
+- All users add notes, view leads, and access statistics.  
+- Role-based access control (`client`, `partner`, `admin`).  
+- Soft deletion for leads.  
+
+---
+
+#### **Endpoints**  
+All routes require:  
+- Firebase Authentication (`verifyFirebaseToken` middleware).  
+- Input sanitization (`sanitizeInput` middleware).  
+
+| Method | Path                 | Permissions       | Description                                      | Request Body                                                                 | Response                                                                 |
+|--------|----------------------|-------------------|--------------------------------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| POST   | `/`                 | `client`          | Create a new lead                                | `partnerId`, `message`, `serviceType`, `eventDate`, `budget`, `location`...  | `201`: Created lead with populated client/partner details               |
+| GET    | `/`                 | `client`/`partner`| List paginated leads (filter by `status`, `sort`) | Query: `page`, `limit`, `status`, `sortBy`, `sortOrder`                      | `200`: Leads + pagination metadata                                      |
+| GET    | `/:leadId`          | Owner or `admin`  | Get lead details                                 | -                                                                            | `200`: Full lead details with notes                                     |
+| PATCH  | `/:leadId`          | Owner or `admin`  | Update lead                                      | Fields from `updateLeadSchema` (e.g., `status`, `priority`, `message`)       | `200`: Updated lead                                                     |
+| POST   | `/:leadId/notes`    | Owner or `admin`  | Add note to lead                                 | `{ note: "string" }`                                                         | `200`: Lead with new note                                               |
+| DELETE | `/:leadId`          | `client` or `admin`| Soft-delete lead                                | -                                                                            | `200`: Success message                                                  |
+| GET    | `/stats/partner`    | `partner`         | Partner dashboard stats + recent leads           | Query: `startDate`, `endDate`, `period`                                      | `200`: Stats, recent leads, priority breakdown                          |
+
+---
+
+#### **Validation Schemas**  
+**1. Lead Creation (`createLeadSchema`):**  
+```js
+{
+  partnerId: "string",         // Required
+  message: "string(10-1000)",  // Required
+  serviceType: "string",       // Optional
+  eventDate: Date,             // Optional
+  budget: {                    // Optional
+    min: number, 
+    max: number, 
+    currency: "string" (default: "INR")
+  },
+  contactMethod: "email"|"phone"|... (default: "website_form"),
+  source: "website"|"social_media"|... (default: "website")
+}
+```
+
+**2. Lead Update (`updateLeadSchema`):**  
+```js
+{
+  status: "new"|"contacted"|"converted"|"closed", // Optional
+  message: "string(10-1000)",                     // Optional
+  priority: "low"|"medium"|"high"|"urgent",       // Optional
+  // ...other fields (e.g., budget, eventDate)
+}
+```
+
+---
+
+#### **Models & Methods**  
+**`Lead` Model (Key Fields):**  
+```js
+{
+  clientId: ObjectId,   // Reference to User
+  partnerId: ObjectId,  // Reference to Partner
+  status: String,       // e.g., "new"
+  priority: String,     // e.g., "medium"
+  notes: [{             // Embedded notes
+    content: String,
+    addedBy: ObjectId,  // Reference to User
+    createdAt: Date
+  }],
+  deletedAt: Date       // Soft-delete timestamp
+}
+```
+
+**Custom Methods:**  
+- `lead.updateStatus(newStatus, userId)`: Updates status + logs change.  
+- `lead.addNote(content, userId)`: Appends note.  
+- `lead.softDelete()`: Sets `deletedAt` timestamp.  
+- `Lead.getPartnerStats(partnerId, dateRange)`: Returns conversion rates, lead counts.  
+
+---
+
+#### **Middleware**  
+| Middleware                 | Purpose                                                                 |
+|----------------------------|-------------------------------------------------------------------------|
+| `verifyFirebaseToken`      | Validates Firebase ID token; attaches `user` to `req`.                  |
+| `authorize(role)`          | Restricts access to specified roles (`client`, `partner`, `admin`).     |
+| `sanitizeInput`            | Sanitizes request body/query to prevent XSS attacks.                    |
+| `requireEmailVerification` | Ensures user email is verified (not used here, but available).          |
+
+---
+
+#### **Notes**  
+1. **Permissions:**  
+   - Clients: Create leads, update their own leads, add notes, delete leads.  
+   - Partners: Update `status`/`priority` of their leads, view stats.  
+   - Admins: Full access.  
+
+2. **Soft Delete:**  
+   Deleted leads remain in the DB with `deletedAt` set. Excluded from queries by default.  
+
+3. **Population:**  
+   Responses include populated user/partner details (e.g., `username`, `email`).  
+
+4. **Error Handling:**  
+   - `400` for validation errors.  
+   - `403` for unauthorized access.  
+   - `404` if lead/partner not found.  
+   - `500` for server errors.  
+
+---
+
+#### **Example Request**  
+**Create Lead:**  
+```bash
+curl -X POST /leads \
+  -H "Authorization: Bearer <FIREBASE_TOKEN>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "partnerId": "partner123",
+    "message": "Need wedding photography on Jan 2025",
+    "budget": { "min": 1000, "max": 2000 }
+  }'
+```
+
+**Partner Stats:**  
+```bash
+curl -X GET "/leads/stats/partner?period=30" \
+  -H "Authorization: Bearer <FIREBASE_TOKEN>"
+```
+
+---
+
+**License:** Proprietary.  
+**Contact:** dev@example.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "partnerId": "685e62aaba93267340227b95",
+  "message": "Test with userId"
+}
+
+{
+  "partnerId": "685e62abba93267340227b98",
+  "message": "Hello! I’d like more info on your services."
+}

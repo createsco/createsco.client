@@ -1,0 +1,1084 @@
+{
+    "success": true,
+    "data": {
+        "partners": [
+            {
+                "_id": "90616be967e8c338effe7a64",
+                "specializations": [
+                    "Fashion photography",
+                    "Real estate photography",
+                    "Aerial photography",
+                    "Product photography"
+                ],
+                "portfolio": [
+                    "https://picsum.photos/seed/fb7691fed96159c950e2463e-0/800/600",
+                    "https://picsum.photos/seed/fb7691fed96159c950e2463e-1/800/600"
+                ],
+                "experienceYears": 3,
+                "servingLocations": [
+                    "Mumbai",
+                    "Gurgaon"
+                ],
+                "avgRating": 3.9,
+                "totalReviews": 86,
+                "verified": true,
+                "projectStats": {
+                    "total": 31,
+                    "completed": 8,
+                    "ongoing": 23
+                },
+                "partnerLocations": [
+                    {
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "coordinates": {
+                            "lat": 19.118696,
+                            "lng": 72.856943
+                        },
+                        "pinCodesServed": [
+                            "400002",
+                            "400003"
+                        ],
+                        "_id": "fbedbd90892692128492555c"
+                    },
+                    {
+                        "city": "Gurgaon",
+                        "state": "Haryana",
+                        "coordinates": {
+                            "lat": 28.484261,
+                            "lng": 77.009519
+                        },
+                        "pinCodesServed": [
+                            "122001",
+                            "122002"
+                        ],
+                        "_id": "c72681bd5c4439b7614ea9b0"
+                    }
+                ],
+                "createdAt": "2024-08-14T16:50:16.000Z",
+                "companyName": "Elite Solutions",
+                "partnerType": "company",
+                "socialLinks": {
+                    "website": "",
+                    "instagram": "",
+                    "facebook": "",
+                    "x": "",
+                    "pinterest": "",
+                    "youtube": ""
+                },
+                "user": {
+                    "username": "keyawali712@example.com",
+                    "profilePic": null
+                },
+                "services": [
+                    {
+                        "serviceId": "85467025cad54f0504b3f9e4",
+                        "name": "Product Photography",
+                        "description": "",
+                        "basePrice": 10000,
+                        "priceUnit": "per_product"
+                    }
+                ],
+                "completionRate": 25.806451612903224,
+                "hasLocationPricing": true
+            },
+            {
+                "_id": "70faa6bd2d42292a1fd9d621",
+                "specializations": [
+                    "Real estate photography",
+                    "Commercial photography"
+                ],
+                "portfolio": [
+                    "https://picsum.photos/seed/5ea5209a24954ce85785d217-0/800/600",
+                    "https://picsum.photos/seed/5ea5209a24954ce85785d217-1/800/600"
+                ],
+                "experienceYears": 7,
+                "servingLocations": [
+                    "Mumbai",
+                    "Noida"
+                ],
+                "avgRating": 3.8,
+                "totalReviews": 140,
+                "verified": true,
+                "projectStats": {
+                    "total": 70,
+                    "completed": 61,
+                    "ongoing": 9
+                },
+                "partnerLocations": [
+                    {
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "coordinates": {
+                            "lat": 19.042507,
+                            "lng": 72.917451
+                        },
+                        "pinCodesServed": [
+                            "400002",
+                            "400003"
+                        ],
+                        "_id": "94a1b7e0261c461e907c4fdc"
+                    },
+                    {
+                        "city": "Noida",
+                        "state": "Uttar Pradesh",
+                        "coordinates": {
+                            "lat": 28.568248,
+                            "lng": 77.358139
+                        },
+                        "pinCodesServed": [
+                            "201301"
+                        ],
+                        "_id": "91e8e821bb6ccb785a9d58af"
+                    }
+                ],
+                "createdAt": "2024-11-04T02:32:41.000Z",
+                "companyName": "Tech Media",
+                "partnerType": "solo",
+                "socialLinks": {
+                    "website": "",
+                    "instagram": "",
+                    "facebook": "",
+                    "x": "",
+                    "pinterest": "",
+                    "youtube": ""
+                },
+                "user": {
+                    "username": "gaurisethi430@example.com",
+                    "profilePic": null
+                },
+                "services": [
+                    {
+                        "serviceId": "e9838c7df6e56a2583f5aa9c",
+                        "name": "Fashion Shoot",
+                        "description": "",
+                        "basePrice": 45000,
+                        "priceUnit": "per_project"
+                    },
+                    {
+                        "serviceId": "057c6ba2994514986328c7e1",
+                        "name": "Drone Aerial Shoot",
+                        "description": "",
+                        "basePrice": 40000,
+                        "priceUnit": "per_hour"
+                    }
+                ],
+                "completionRate": 87.14285714285714,
+                "hasLocationPricing": true
+            },
+            {
+                "_id": "72a4642c99ea53265105e3dd",
+                "specializations": [
+                    "Product photography",
+                    "Portrait photography",
+                    "Real estate photography"
+                ],
+                "portfolio": [
+                    "https://picsum.photos/seed/6a3972e028e12bcbc42ce63c-0/800/600"
+                ],
+                "experienceYears": 4,
+                "servingLocations": [
+                    "Mumbai",
+                    "Chennai"
+                ],
+                "avgRating": 3.8,
+                "totalReviews": 22,
+                "verified": true,
+                "projectStats": {
+                    "total": 13,
+                    "completed": 6,
+                    "ongoing": 7
+                },
+                "partnerLocations": [
+                    {
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "coordinates": {
+                            "lat": 19.120354,
+                            "lng": 72.921396
+                        },
+                        "pinCodesServed": [
+                            "400003"
+                        ],
+                        "_id": "6a5adc74b787082dd9696e49"
+                    },
+                    {
+                        "city": "Chennai",
+                        "state": "Tamil Nadu",
+                        "coordinates": {
+                            "lat": 13.081569,
+                            "lng": 80.245969
+                        },
+                        "pinCodesServed": [
+                            "600001",
+                            "600002"
+                        ],
+                        "_id": "19899815d1934895b19c27a7"
+                    }
+                ],
+                "createdAt": "2024-09-17T02:12:26.000Z",
+                "companyName": "Future Imaging",
+                "partnerType": "company",
+                "socialLinks": {
+                    "website": "",
+                    "instagram": "",
+                    "facebook": "",
+                    "x": "",
+                    "pinterest": "",
+                    "youtube": ""
+                },
+                "user": {
+                    "username": "varshaagate462@example.com",
+                    "profilePic": null
+                },
+                "services": [
+                    {
+                        "serviceId": "031f8383344b912a1fc80110",
+                        "name": "Product Photography",
+                        "description": "",
+                        "basePrice": 10000,
+                        "priceUnit": "per_product"
+                    }
+                ],
+                "completionRate": 46.15384615384615,
+                "hasLocationPricing": true
+            },
+            {
+                "_id": "a14aff3faeee7e070ff9e5dc",
+                "specializations": [
+                    "Commercial photography",
+                    "Wedding photography",
+                    "Real estate photography",
+                    "Aerial photography"
+                ],
+                "portfolio": [
+                    "https://picsum.photos/seed/3cb20eb1324089d6856b6321-0/800/600"
+                ],
+                "experienceYears": 9,
+                "servingLocations": [
+                    "Lucknow",
+                    "Mumbai"
+                ],
+                "avgRating": 3.8,
+                "totalReviews": 195,
+                "verified": true,
+                "projectStats": {
+                    "total": 66,
+                    "completed": 53,
+                    "ongoing": 13
+                },
+                "partnerLocations": [
+                    {
+                        "city": "Lucknow",
+                        "state": "Uttar Pradesh",
+                        "coordinates": {
+                            "lat": 26.855931,
+                            "lng": 80.90055
+                        },
+                        "pinCodesServed": [
+                            "226002",
+                            "226003"
+                        ],
+                        "_id": "b87e6d80fef3d6d836419523"
+                    },
+                    {
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "coordinates": {
+                            "lat": 19.111658,
+                            "lng": 72.872767
+                        },
+                        "pinCodesServed": [
+                            "400002",
+                            "400001"
+                        ],
+                        "_id": "fc2c2b5dbef6cef0cec7ba62"
+                    }
+                ],
+                "createdAt": "2024-11-03T04:58:10.000Z",
+                "companyName": "Creative Creations",
+                "partnerType": "company",
+                "socialLinks": {
+                    "website": "",
+                    "instagram": "",
+                    "facebook": "",
+                    "x": "",
+                    "pinterest": "",
+                    "youtube": ""
+                },
+                "user": {
+                    "username": "rayaanom360@example.com",
+                    "profilePic": null
+                },
+                "services": [
+                    {
+                        "serviceId": "36f36509abeebf9f48dc9482",
+                        "name": "Maternity Photoshoot",
+                        "description": "",
+                        "basePrice": 25000,
+                        "priceUnit": "per_project"
+                    }
+                ],
+                "completionRate": 80.3030303030303,
+                "hasLocationPricing": true
+            },
+            {
+                "_id": "a2ffdf5788c10fbcb45ad7d2",
+                "specializations": [
+                    "Real estate photography"
+                ],
+                "portfolio": [
+                    "https://picsum.photos/seed/ba7bec004f064d07da14f03a-0/800/600"
+                ],
+                "experienceYears": 1,
+                "servingLocations": [
+                    "Mumbai",
+                    "Ahmedabad"
+                ],
+                "avgRating": 3.7,
+                "totalReviews": 6,
+                "verified": true,
+                "projectStats": {
+                    "total": 4,
+                    "completed": 0,
+                    "ongoing": 4
+                },
+                "partnerLocations": [
+                    {
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "coordinates": {
+                            "lat": 19.123304,
+                            "lng": 72.854619
+                        },
+                        "pinCodesServed": [
+                            "400001",
+                            "400003"
+                        ],
+                        "_id": "c72d4ab50893a691b4be05ed"
+                    },
+                    {
+                        "city": "Ahmedabad",
+                        "state": "Gujarat",
+                        "coordinates": {
+                            "lat": 23.064204,
+                            "lng": 72.605129
+                        },
+                        "pinCodesServed": [
+                            "380003",
+                            "380002"
+                        ],
+                        "_id": "dd47d50f3d9c007c91436da6"
+                    }
+                ],
+                "createdAt": "2025-02-20T06:28:08.000Z",
+                "companyName": "Tech Creations",
+                "partnerType": "company",
+                "socialLinks": {
+                    "website": "",
+                    "instagram": "",
+                    "facebook": "",
+                    "x": "",
+                    "pinterest": "",
+                    "youtube": ""
+                },
+                "user": {
+                    "username": "tamannasethi320@example.com",
+                    "profilePic": null
+                },
+                "services": [
+                    {
+                        "serviceId": "1acb3792051276a59a39872a",
+                        "name": "Fashion Shoot",
+                        "description": "",
+                        "basePrice": 45000,
+                        "priceUnit": "per_project"
+                    },
+                    {
+                        "serviceId": "8a122bbdff294afda5a17fdd",
+                        "name": "Maternity Photoshoot",
+                        "description": "",
+                        "basePrice": 25000,
+                        "priceUnit": "per_project"
+                    },
+                    {
+                        "serviceId": "ccca2e1ca0a48c1f11b5a0db",
+                        "name": "Portrait Session",
+                        "description": "",
+                        "basePrice": 5000,
+                        "priceUnit": "per_session"
+                    }
+                ],
+                "completionRate": 0,
+                "hasLocationPricing": true
+            },
+            {
+                "_id": "f627dd2d90eae46b6f6c89f4",
+                "specializations": [
+                    "Food photography",
+                    "Real estate photography",
+                    "Fashion photography"
+                ],
+                "portfolio": [
+                    "https://picsum.photos/seed/4d5dee772910c0faae697c1c-0/800/600"
+                ],
+                "experienceYears": 4,
+                "servingLocations": [
+                    "Mumbai",
+                    "Delhi"
+                ],
+                "avgRating": 3.6,
+                "totalReviews": 32,
+                "verified": true,
+                "projectStats": {
+                    "total": 44,
+                    "completed": 30,
+                    "ongoing": 14
+                },
+                "partnerLocations": [
+                    {
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "coordinates": {
+                            "lat": 19.122674,
+                            "lng": 72.891623
+                        },
+                        "pinCodesServed": [
+                            "400003"
+                        ],
+                        "_id": "f5ca5e770535471fa652da6d"
+                    },
+                    {
+                        "city": "Delhi",
+                        "state": "Delhi",
+                        "coordinates": {
+                            "lat": 28.753094,
+                            "lng": 77.069717
+                        },
+                        "pinCodesServed": [
+                            "110001"
+                        ],
+                        "_id": "3ab94d36a3ab8cdde8703745"
+                    }
+                ],
+                "createdAt": "2025-02-18T02:11:01.000Z",
+                "companyName": "Elite Labs",
+                "partnerType": "solo",
+                "socialLinks": {
+                    "website": "",
+                    "instagram": "",
+                    "facebook": "",
+                    "x": "",
+                    "pinterest": "",
+                    "youtube": ""
+                },
+                "user": {
+                    "username": "veersom262@example.com",
+                    "profilePic": null
+                },
+                "services": [
+                    {
+                        "serviceId": "d4e16b721ceff33c8181ce15",
+                        "name": "Wedding Photography",
+                        "description": "",
+                        "basePrice": 50000,
+                        "priceUnit": "per_event"
+                    },
+                    {
+                        "serviceId": "44fd40753eecdf9f21e1f1be",
+                        "name": "Event Coverage",
+                        "description": "",
+                        "basePrice": 30000,
+                        "priceUnit": "per_event"
+                    },
+                    {
+                        "serviceId": "1f469ca3442ae833a08bb0cb",
+                        "name": "Maternity Photoshoot",
+                        "description": "",
+                        "basePrice": 25000,
+                        "priceUnit": "per_project"
+                    }
+                ],
+                "completionRate": 68.18181818181817,
+                "hasLocationPricing": true
+            },
+            {
+                "_id": "baace4e9ef595d03fe1125fe",
+                "specializations": [
+                    "Event photography",
+                    "Fashion photography",
+                    "Aerial photography",
+                    "Real estate photography"
+                ],
+                "portfolio": [
+                    "https://picsum.photos/seed/5bbb27777451753ca80a7b6e-0/800/600",
+                    "https://picsum.photos/seed/5bbb27777451753ca80a7b6e-1/800/600"
+                ],
+                "experienceYears": 6,
+                "servingLocations": [
+                    "Jaipur",
+                    "Mumbai"
+                ],
+                "avgRating": 0,
+                "totalReviews": 0,
+                "verified": true,
+                "projectStats": {
+                    "total": 0,
+                    "completed": 0,
+                    "ongoing": 0
+                },
+                "partnerLocations": [
+                    {
+                        "city": "Jaipur",
+                        "state": "Rajasthan",
+                        "coordinates": {
+                            "lat": 26.876244,
+                            "lng": 75.744631
+                        },
+                        "pinCodesServed": [
+                            "302002"
+                        ],
+                        "_id": "f29f43b505082e6bd674fd5b"
+                    },
+                    {
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "coordinates": {
+                            "lat": 19.110626,
+                            "lng": 72.897987
+                        },
+                        "pinCodesServed": [
+                            "400003",
+                            "400002"
+                        ],
+                        "_id": "2ece26b3b30ceb256ec539ec"
+                    }
+                ],
+                "createdAt": "2024-09-10T02:35:21.000Z",
+                "companyName": "Digital Imaging",
+                "partnerType": "company",
+                "socialLinks": {
+                    "website": "",
+                    "instagram": "",
+                    "facebook": "",
+                    "x": "",
+                    "pinterest": "",
+                    "youtube": ""
+                },
+                "user": {
+                    "username": "lopabrahmbhatt677@example.com",
+                    "profilePic": null
+                },
+                "services": [
+                    {
+                        "serviceId": "026ab27171a861925abefd6a",
+                        "name": "Drone Aerial Shoot",
+                        "description": "",
+                        "basePrice": 40000,
+                        "priceUnit": "per_hour"
+                    }
+                ],
+                "completionRate": 0,
+                "hasLocationPricing": true
+            },
+            {
+                "_id": "e53fcbba3803bfb95daf01e3",
+                "specializations": [
+                    "Food photography",
+                    "Fashion photography",
+                    "Real estate photography",
+                    "Event photography"
+                ],
+                "portfolio": [
+                    "https://picsum.photos/seed/98daaef9c38c132e695e6b18-0/800/600",
+                    "https://picsum.photos/seed/98daaef9c38c132e695e6b18-1/800/600"
+                ],
+                "experienceYears": 4,
+                "servingLocations": [
+                    "Mumbai"
+                ],
+                "avgRating": 0,
+                "totalReviews": 0,
+                "verified": true,
+                "projectStats": {
+                    "total": 0,
+                    "completed": 0,
+                    "ongoing": 0
+                },
+                "partnerLocations": [
+                    {
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "coordinates": {
+                            "lat": 19.075983,
+                            "lng": 72.863306
+                        },
+                        "pinCodesServed": [
+                            "400003",
+                            "400001"
+                        ],
+                        "_id": "8349f77e762277523fc77a33"
+                    }
+                ],
+                "createdAt": "2025-01-08T14:51:13.000Z",
+                "companyName": "Elite Labs",
+                "partnerType": "company",
+                "socialLinks": {
+                    "website": "",
+                    "instagram": "",
+                    "facebook": "",
+                    "x": "",
+                    "pinterest": "",
+                    "youtube": ""
+                },
+                "user": {
+                    "username": "jasondani756@example.com",
+                    "profilePic": null
+                },
+                "services": [
+                    {
+                        "serviceId": "a8170c3efc712792623481a4",
+                        "name": "Event Coverage",
+                        "description": "",
+                        "basePrice": 30000,
+                        "priceUnit": "per_event"
+                    }
+                ],
+                "completionRate": 0,
+                "hasLocationPricing": true
+            },
+            {
+                "_id": "2bf3a294d15a9db1527c0459",
+                "specializations": [
+                    "Real estate photography",
+                    "Commercial photography",
+                    "Wedding photography"
+                ],
+                "portfolio": [
+                    "https://picsum.photos/seed/6af1265ba868b69457298c3c-0/800/600"
+                ],
+                "experienceYears": 2,
+                "servingLocations": [
+                    "Mumbai",
+                    "Chennai"
+                ],
+                "avgRating": 0,
+                "totalReviews": 0,
+                "verified": true,
+                "projectStats": {
+                    "total": 0,
+                    "completed": 0,
+                    "ongoing": 0
+                },
+                "partnerLocations": [
+                    {
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "coordinates": {
+                            "lat": 19.044753,
+                            "lng": 72.880701
+                        },
+                        "pinCodesServed": [
+                            "400001",
+                            "400002"
+                        ],
+                        "_id": "54435037e89e2c68d93befc6"
+                    },
+                    {
+                        "city": "Chennai",
+                        "state": "Tamil Nadu",
+                        "coordinates": {
+                            "lat": 13.081568,
+                            "lng": 80.242131
+                        },
+                        "pinCodesServed": [
+                            "600001",
+                            "600002"
+                        ],
+                        "_id": "f0f8b4e03837514b7621c025"
+                    }
+                ],
+                "createdAt": "2025-03-30T17:43:43.000Z",
+                "companyName": "Elite Solutions",
+                "partnerType": "solo",
+                "socialLinks": {
+                    "website": "",
+                    "instagram": "",
+                    "facebook": "",
+                    "x": "",
+                    "pinterest": "",
+                    "youtube": ""
+                },
+                "user": {
+                    "username": "sakshamcontractor480@example.com",
+                    "profilePic": null
+                },
+                "services": [
+                    {
+                        "serviceId": "e4301f0436cfb48c770b39b0",
+                        "name": "Maternity Photoshoot",
+                        "description": "",
+                        "basePrice": 25000,
+                        "priceUnit": "per_project"
+                    }
+                ],
+                "completionRate": 0,
+                "hasLocationPricing": true
+            },
+            {
+                "_id": "685e62abba93267340227b98",
+                "specializations": [
+                    "Commercial photography",
+                    "Real estate photography",
+                    "Food photography"
+                ],
+                "portfolio": [
+                    "https://firebasestorage.googleapis.com/v0/b/pixisphere770.firebasestorage.app/o/partners%2FrlRsXcx8yobwskA1px0QK2VwGiZ2%2Fportfolio%2F1751016227539_logo_idea_sspsn_circle_international_school_in.jpeg?alt=media&token=dc6b19c6-43f9-484b-b31b-4c959f58cc5e",
+                    "https://firebasestorage.googleapis.com/v0/b/pixisphere770.firebasestorage.app/o/portfolio%2F1751365042341_zwnn4dzp8r8_SRISHTI3%20copy.jpg?alt=media&token=0c896024-e1a2-4e73-aafe-79d82b861e8b",
+                    "https://firebasestorage.googleapis.com/v0/b/pixisphere770.firebasestorage.app/o/portfolio%2F1751369933021_egvctgpf89_hellsing-alucard-guns-4k-wallpaper-uhdpaper.com-228%405%40d.jpg?alt=media&token=8e02feb0-b2b6-49b8-a811-358e8659e264",
+                    "https://firebasestorage.googleapis.com/v0/b/pixisphere770.firebasestorage.app/o/portfolio%2F1751369933027_ruhighg1qao_alucard-hellsing-ultimate-4k-wallpaper-uhdpaper.com-226%405%40d.jpg?alt=media&token=0819f44d-dd55-498f-9541-b1b235d5b0d5",
+                    "https://firebasestorage.googleapis.com/v0/b/pixisphere770.firebasestorage.app/o/portfolio%2F1751369933027_mkcxi7vgtyo_hellsing-ultimate-alucard-hands-4k-wallpaper-uhdpaper.com-227%405%40d.jpg?alt=media&token=200f8537-9c04-4ce6-97b2-62c0ac36e03d",
+                    "https://firebasestorage.googleapis.com/v0/b/pixisphere770.firebasestorage.app/o/portfolio%2F1751369933029_wae6q6kona8_alucard-hellsing-ultimate-4k-wallpaper-uhdpaper.com-230%405%40d.jpg?alt=media&token=92faf1ab-d84a-42a5-965f-184eeb5fb6b5",
+                    "https://firebasestorage.googleapis.com/v0/b/pixisphere770.firebasestorage.app/o/portfolio%2F1751369933029_gr15ea3y7h_sung-jinwoo-vs-beru-solo-leveling-4k-wallpaper-uhdpaper.com-143%405%40d.jpg?alt=media&token=9ae3a344-dd6f-409c-80ca-c961363a337d",
+                    "https://firebasestorage.googleapis.com/v0/b/pixisphere770.firebasestorage.app/o/portfolio%2F1751369933030_vw6i4j5oy0l_1328430-sheep-in-front-of-mont-saintmichel-normandy.jpg?alt=media&token=c27b09bc-24ce-4440-bfb1-6ce146867da8",
+                    "https://firebasestorage.googleapis.com/v0/b/pixisphere770.firebasestorage.app/o/portfolio%2F1751369987794_n7pfgw8nuwl_DSC08720.JPG?alt=media&token=8a421c87-6906-45c0-9396-34aca4f28c96",
+                    "https://firebasestorage.googleapis.com/v0/b/pixisphere770.firebasestorage.app/o/portfolio%2F1751387912032_eycc7mrz7yg_IMG_7556.jpeg?alt=media&token=31dbc96b-bc4c-472f-b175-6d65a6ebcd36",
+                    "https://firebasestorage.googleapis.com/v0/b/pixisphere770.firebasestorage.app/o/portfolio%2F1751387912035_o6kope6n0gf_IMG_7555.jpeg?alt=media&token=940d3f26-384f-43b8-90ca-ec54dfd47917",
+                    "https://firebasestorage.googleapis.com/v0/b/pixisphere770.firebasestorage.app/o/portfolio%2F1751538215523_razvonmdmg_SRISHTI3%20copy.jpg?alt=media&token=229d0a46-e926-4363-86a0-e73488c83ef3",
+                    "https://firebasestorage.googleapis.com/v0/b/pixisphere770.firebasestorage.app/o/portfolio%2F1751542647828_8ze7c5l5xtf_DSC08720.JPG?alt=media&token=57f1fbd3-b15a-4e46-a38f-cbe9672e79ba"
+                ],
+                "experienceYears": 3,
+                "servingLocations": [
+                    "Mumbai"
+                ],
+                "avgRating": 0,
+                "totalReviews": 0,
+                "verified": true,
+                "projectStats": {
+                    "total": 0,
+                    "completed": 0,
+                    "ongoing": 0
+                },
+                "partnerLocations": [
+                    {
+                        "city": "mumbai",
+                        "state": "Maharashtra",
+                        "coordinates": {
+                            "lat": 0,
+                            "lng": 0
+                        },
+                        "pinCodesServed": [
+                            "400001"
+                        ],
+                        "_id": "685e6319ba93267340227c11"
+                    }
+                ],
+                "createdAt": "2025-06-27T09:21:47.045Z",
+                "companyName": "gfdbg efgfr",
+                "partnerType": "solo",
+                "socialLinks": {
+                    "website": "",
+                    "instagram": "",
+                    "facebook": "",
+                    "x": "",
+                    "pinterest": "",
+                    "youtube": ""
+                },
+                "user": {
+                    "username": "impresiodev1@gmail.com",
+                    "profilePic": null
+                },
+                "services": [
+                    {
+                        "serviceId": "685e62f4ba93267340227c06",
+                        "name": "hbdfgdfg ",
+                        "description": "",
+                        "basePrice": 4343,
+                        "priceUnit": "per_project"
+                    },
+                    {
+                        "serviceId": "6863d278ac2757260a8ed6d1",
+                        "name": "toy",
+                        "basePrice": 25000,
+                        "priceUnit": "per_hour"
+                    }
+                ],
+                "completionRate": 0,
+                "hasLocationPricing": true
+            },
+            {
+                "_id": "0afe0dfded96a98f18189f5c",
+                "specializations": [
+                    "Wedding photography",
+                    "Food photography",
+                    "Real estate photography"
+                ],
+                "portfolio": [
+                    "https://picsum.photos/seed/379ba02f8097fe79fd2fa873-0/800/600",
+                    "https://picsum.photos/seed/379ba02f8097fe79fd2fa873-1/800/600"
+                ],
+                "experienceYears": 9,
+                "servingLocations": [
+                    "Mumbai",
+                    "Hyderabad"
+                ],
+                "avgRating": 0,
+                "totalReviews": 0,
+                "verified": true,
+                "projectStats": {
+                    "total": 0,
+                    "completed": 0,
+                    "ongoing": 0
+                },
+                "partnerLocations": [
+                    {
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "coordinates": {
+                            "lat": 19.079067,
+                            "lng": 72.90221
+                        },
+                        "pinCodesServed": [
+                            "400003",
+                            "400002"
+                        ],
+                        "_id": "5d67b2a2f9384a251cfde51c"
+                    },
+                    {
+                        "city": "Hyderabad",
+                        "state": "Telangana",
+                        "coordinates": {
+                            "lat": 17.398729,
+                            "lng": 78.491336
+                        },
+                        "pinCodesServed": [
+                            "500003",
+                            "500001"
+                        ],
+                        "_id": "24d979115c3a7a3be113c01f"
+                    }
+                ],
+                "createdAt": "2024-10-07T07:42:41.000Z",
+                "companyName": "Digital Studios",
+                "partnerType": "company",
+                "socialLinks": {
+                    "website": "",
+                    "instagram": "",
+                    "facebook": "",
+                    "x": "",
+                    "pinterest": "",
+                    "youtube": ""
+                },
+                "user": {
+                    "username": "ubikabahri456@example.com",
+                    "profilePic": null
+                },
+                "services": [
+                    {
+                        "serviceId": "569e10adcd6e49c6a5f5cf2b",
+                        "name": "Commercial Video",
+                        "description": "",
+                        "basePrice": 70000,
+                        "priceUnit": "per_project"
+                    }
+                ],
+                "completionRate": 0,
+                "hasLocationPricing": true
+            },
+            {
+                "_id": "f572d3402668c1a68e9383b2",
+                "specializations": [
+                    "Real estate photography",
+                    "Portrait photography"
+                ],
+                "portfolio": [
+                    "https://picsum.photos/seed/e46f85d4858c86fe22ba4f09-0/800/600",
+                    "https://picsum.photos/seed/e46f85d4858c86fe22ba4f09-1/800/600"
+                ],
+                "experienceYears": 8,
+                "servingLocations": [
+                    "Gurgaon",
+                    "Mumbai"
+                ],
+                "avgRating": 0,
+                "totalReviews": 0,
+                "verified": true,
+                "projectStats": {
+                    "total": 0,
+                    "completed": 0,
+                    "ongoing": 0
+                },
+                "partnerLocations": [
+                    {
+                        "city": "Gurgaon",
+                        "state": "Haryana",
+                        "coordinates": {
+                            "lat": 28.458197,
+                            "lng": 76.986283
+                        },
+                        "pinCodesServed": [
+                            "122001",
+                            "122003"
+                        ],
+                        "_id": "72ea2b7d5b0ce8b2e9d043a5"
+                    },
+                    {
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "coordinates": {
+                            "lat": 19.074435,
+                            "lng": 72.912951
+                        },
+                        "pinCodesServed": [
+                            "400002"
+                        ],
+                        "_id": "94d8e2be6335b9ecf6d436c6"
+                    }
+                ],
+                "createdAt": "2024-11-29T06:53:03.000Z",
+                "companyName": "Innovative Labs",
+                "partnerType": "solo",
+                "socialLinks": {
+                    "website": "",
+                    "instagram": "",
+                    "facebook": "",
+                    "x": "",
+                    "pinterest": "",
+                    "youtube": ""
+                },
+                "user": {
+                    "username": "falakdutt644@example.com",
+                    "profilePic": null
+                },
+                "services": [
+                    {
+                        "serviceId": "e11cd6d36497b7f4f283e1d7",
+                        "name": "Maternity Photoshoot",
+                        "description": "",
+                        "basePrice": 25000,
+                        "priceUnit": "per_project"
+                    },
+                    {
+                        "serviceId": "60a7d22b8dc9048fc2bc758a",
+                        "name": "Portrait Session",
+                        "description": "",
+                        "basePrice": 5000,
+                        "priceUnit": "per_session"
+                    }
+                ],
+                "completionRate": 0,
+                "hasLocationPricing": true
+            }
+        ],
+        "pagination": {
+            "page": 3,
+            "limit": 12,
+            "total": 46,
+            "pages": 4,
+            "hasNext": true,
+            "hasPrev": true
+        },
+        "filters": {
+            "locations": [
+                "Ahmedabad",
+                "Bangalore",
+                "Bengaluru",
+                "Chandigarh",
+                "Chennai",
+                "Delhi",
+                "Delihi",
+                "Greater Noida",
+                "Gurgaon",
+                "Hyderabad",
+                "Jaipur",
+                "Kochi",
+                "Kolkata",
+                "Lucknow",
+                "Mumbai",
+                "Noida",
+                "Noshhsbs",
+                "Pune",
+                "Wedding"
+            ],
+            "specializations": [
+                "Aerial photography",
+                "Commercial photography",
+                "Event photography",
+                "Fashion photography",
+                "Food photography",
+                "Portrait photography",
+                "Product photography",
+                "Real estate photography",
+                "Wedding photography",
+                "commercial_photography",
+                "commercial_videography",
+                "corporate_video",
+                "documentary_videography",
+                "event_videography",
+                "fashion_photography",
+                "music_video",
+                "product_photography",
+                "wedding_photography",
+                "wedding_videography"
+            ],
+            "partnerTypes": [
+                "company",
+                "firm",
+                "solo",
+                "studio"
+            ],
+            "ratingRanges": [
+                {
+                    "_id": "Below 3.0",
+                    "count": 1674
+                },
+                {
+                    "_id": "4.5+",
+                    "count": 841
+                },
+                {
+                    "_id": "4.0+",
+                    "count": 868
+                },
+                {
+                    "_id": "3.5+",
+                    "count": 444
+                },
+                {
+                    "_id": "3.0+",
+                    "count": 349
+                }
+            ],
+            "priceRanges": [
+                {
+                    "_id": "Under ₹10,000",
+                    "count": 482
+                },
+                {
+                    "_id": "₹50,000 - ₹1,00,000",
+                    "count": 910
+                },
+                {
+                    "_id": "₹10,000 - ₹25,000",
+                    "count": 2474
+                },
+                {
+                    "_id": "₹1,00,000+",
+                    "count": 2
+                },
+                {
+                    "_id": "₹25,000 - ₹50,000",
+                    "count": 2470
+                }
+            ]
+        },
+        "appliedFilters": {
+            "location": "Mumbai",
+            "specialization": "Real estate photography",
+            "minPrice": 10000,
+            "maxPrice": 70000,
+            "sortBy": "avgRating",
+            "sortOrder": "desc"
+        }
+    }
+}

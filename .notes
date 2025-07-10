@@ -1,0 +1,9 @@
+i want you to create a login and signup system matching the pixisphere vibes and compeletely authenticating using firebase 
+1. user will be land on the sign up page where he can sign up and also go to the login page if he is already logged in 
+2. sign up page will have email sign up , that will be verified by email authentication using firebase
+3, after the successfull signup user will be sent to the onboarding page for completing his profile 
+
+
+
+
+there must an email notification system that will
