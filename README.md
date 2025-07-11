@@ -563,8 +563,12 @@ const usePartners = (filters) => {
 
   return { partners, loading, pagination };
 };
-#   c r e a t e s c o . c l i e n t  
- #   c r e a t e s c o . c l i e n t  
- #   c r e a t e s c o . c l i e n t  
- #   c r e a t e s c o . c l i e n t  
+#   c r e a t e s c o . c l i e n t 
+ 
+ #   c r e a t e s c o . c l i e n t 
+ 
+ #   c r e a t e s c o . c l i e n t 
+ 
+ #   c r e a t e s c o . c l i e n t 
+ 
  

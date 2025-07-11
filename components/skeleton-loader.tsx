@@ -3,7 +3,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 
 export function PhotographerSkeleton() {
   return (
-    <div className="space-y-3 w-[280px] flex-shrink-0">
+    <div className="space-y-3 w-full sm:w-[280px] flex-shrink-0">
       {/* Image skeleton */}
       <Skeleton className="aspect-[4/5] w-full rounded-2xl" />
 
@@ -23,7 +23,7 @@ export function PhotographerSkeleton() {
 
 export function StudioSkeleton() {
   return (
-    <div className="space-y-3 w-[280px] flex-shrink-0">
+    <div className="space-y-3 w-full sm:w-[280px] flex-shrink-0">
       {/* Image skeleton */}
       <Skeleton className="aspect-[3/2] w-full rounded-2xl" />
 

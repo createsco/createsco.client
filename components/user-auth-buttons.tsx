@@ -96,8 +96,8 @@ export default function UserAuthButtons({ className }: { className?: string }) {
 
   if (!user) {
     return (
-      <>
-        <Button asChild variant="ghost" size="sm" className="text-gray-600 dark:text-gray-300 hidden sm:inline-flex">
+      <div className="flex flex-row gap-2">
+        <Button asChild variant="ghost" size="sm" className="text-gray-600 dark:text-gray-300">
           <Link href="/auth/login">Sign in</Link>
         </Button>
         <Button
@@ -107,7 +107,7 @@ export default function UserAuthButtons({ className }: { className?: string }) {
         >
           <Link href="/auth/register">Join now</Link>
         </Button>
-      </>
+      </div>
     )
   }
 

@@ -234,16 +234,6 @@ export function useLocations(params: UseLocationsParams = {}) {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
-  // Attempt to serve from cache first for snappy navigation
-  useEffect(() => {
-    const cacheKey = `locations` // only one variant
-    const cached = getCache<{ list: { name: string; photographers: number }[] }>(cacheKey, CACHE_TTL)
-    if (cached) {
-      setLocations(cached.list)
-      setLoading(false)
-    }
-  }, [])
-
   useEffect(() => {
     let cancelled = false
 
@@ -255,23 +245,17 @@ export function useLocations(params: UseLocationsParams = {}) {
         const response = await apiClient.getFilterOptions()
 
         if (!cancelled && response.success && response.data?.filters?.locations) {
-          // Deduplicate locations (case-sensitive) to avoid rendering duplicates
+          // Only use real data, no placeholder counts
           const uniqueLocations = Array.from(new Set(response.data.filters.locations))
-
-          const mappedLocations = uniqueLocations.map((location: string) => ({
-            name: location,
-            photographers: Math.floor(Math.random() * 100) + 20, // placeholder count (TODO: replace with real count)
-          }))
-          setLocations(mappedLocations)
-
-          // Persist to cache for future navigations
-          setCache("locations", { list: mappedLocations })
+          setLocations(uniqueLocations.map((location: string) => ({ name: location, photographers: 0 })))
         } else if (!cancelled) {
-          setError(response.message || "Failed to load locations")
+          setError('internal server error')
+          setLocations([])
         }
       } catch (err) {
         if (!cancelled) {
-          setError(err instanceof Error ? err.message : "Unknown error")
+          setError('internal server error')
+          setLocations([])
         }
       } finally {
         if (!cancelled) {
@@ -285,7 +269,7 @@ export function useLocations(params: UseLocationsParams = {}) {
     return () => {
       cancelled = true
     }
-  }, [params.limit])
+  }, [])
 
   return { locations, loading, error }
 }

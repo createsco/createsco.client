@@ -37,18 +37,13 @@ export function SearchSection({ onAIPromptClick }: SearchSectionProps) {
         if (response.success && response.data?.filters) {
           setLocations(response.data.filters.locations || [])
           setSpecializations(response.data.filters.specializations || [])
+        } else {
+          setLocations([])
+          setSpecializations([])
         }
       } catch (error) {
-        console.error("Failed to fetch filter options:", error)
-        // Fallback to some basic options
-        setLocations(["Mumbai", "Delhi", "Bangalore", "Chennai", "Hyderabad", "Kolkata", "Pune"])
-        setSpecializations([
-          "wedding_photography",
-          "portrait_photography",
-          "event_photography",
-          "maternity_photography",
-          "fashion_photography",
-        ])
+        setLocations([])
+        setSpecializations([])
       } finally {
         setLoadingFilters(false)
       }
@@ -138,10 +133,11 @@ export function SearchSection({ onAIPromptClick }: SearchSectionProps) {
 
         {/* Clean Search Bar */}
         <div className="max-w-3xl mx-auto mb-8">
-          <div className="bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-700 p-2">
-            <div className="flex items-center">
+          {/* Squircle on mobile, pill on wider screens */}
+          <div className="bg-white dark:bg-gray-800 rounded-[2rem] sm:rounded-full overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 p-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
               {/* Location Input */}
-              <div ref={locationRef} className="flex-1 relative">
+              <div ref={locationRef} className="flex-1 w-full relative">
                 <div className="relative">
                   <MapPin className="absolute left-6 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                   <Input
@@ -180,11 +176,11 @@ export function SearchSection({ onAIPromptClick }: SearchSectionProps) {
                 )}
               </div>
 
-              {/* Divider */}
-              <div className="w-px h-8 bg-gray-200 dark:bg-gray-700 mx-2"></div>
+              {/* Divider (only visible on wider screens) */}
+              <div className="hidden sm:block w-px h-8 bg-gray-200 dark:bg-gray-700 mx-2" />
 
               {/* Event Type Input */}
-              <div ref={eventRef} className="flex-1 relative">
+              <div ref={eventRef} className="flex-1 w-full relative">
                 <div className="relative">
                   <Camera className="absolute left-6 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                   <Input
@@ -226,7 +222,7 @@ export function SearchSection({ onAIPromptClick }: SearchSectionProps) {
               {/* Search Button */}
               <Button
                 onClick={handleSearch}
-                className="flex items-center justify-center h-16 px-8 rounded-full bg-gray-900 hover:bg-gray-800 text-white font-semibold text-base ml-2"
+                className="flex items-center justify-center h-16 px-8 rounded-full bg-gray-900 hover:bg-gray-800 text-white font-semibold text-base w-full sm:w-auto sm:ml-2"
               >
                 <Search className="h-5 w-5 mr-2" />
                 Search

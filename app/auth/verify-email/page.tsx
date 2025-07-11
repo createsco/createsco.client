@@ -90,23 +90,23 @@ export default function VerifyEmailPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-950 flex items-center justify-center">
         <Loader2 className="h-8 w-8 animate-spin" />
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-950 flex items-center justify-center p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <div className="mx-auto mb-4 w-12 h-12 rounded-full flex items-center justify-center">
             {verified ? (
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center">
                 <CheckCircle className="h-6 w-6 text-green-600" />
               </div>
             ) : (
-              <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-yellow-100 dark:bg-yellow-900/20 rounded-full flex items-center justify-center">
                 <XCircle className="h-6 w-6 text-yellow-600" />
               </div>
             )}
@@ -133,7 +133,7 @@ export default function VerifyEmailPage() {
             </div>
           ) : (
             <>
-              <div className="text-sm text-gray-600 text-center">
+              <div className="text-sm text-gray-600 dark:text-gray-300 text-center">
                 Please check your email and click the verification link, then click the button below.
               </div>
 
@@ -145,7 +145,7 @@ export default function VerifyEmailPage() {
           )}
 
           <div className="text-center text-sm">
-            <button onClick={() => router.push("/auth/register")} className="text-blue-600 hover:underline">
+            <button onClick={() => router.push("/auth/register")} className="text-blue-600 dark:text-blue-400 hover:underline">
               Back to Registration
             </button>
           </div>

@@ -78,14 +78,23 @@ export default function LoginPage() {
 
       const data = await response.json()
 
+      // Normalize error object for both { success: false, ... } and { error: { ... } } responses
+      const errorObj = data.error || data;
+      const errorsArr = errorObj.errors || data.errors;
+      const invalidCreds =
+        errorObj.message === "INVALID_LOGIN_CREDENTIALS" ||
+        (errorsArr && Array.isArray(errorsArr) && errorsArr.some((e: any) => e.message === "INVALID_LOGIN_CREDENTIALS"));
+
       if (data.success) {
         // Store user data in localStorage
         localStorage.setItem("user", JSON.stringify(data.data.user))
 
         // Redirect to home page
         router.push("/")
+      } else if (invalidCreds) {
+        setError("Invalid email or password. Please try again.")
       } else {
-        setError(data.message || "Login failed")
+        setError(errorObj.message || data.message || "Login failed")
       }
     } catch (error: any) {
       console.error("Login error:", error)
