@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import CreateLeadDialog from "@/components/create-lead-dialog"
 
+
 interface PartnerCardProps {
   /** Partner document _id – used for profile page link */
   id?: string
